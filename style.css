@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,200&display=swap');
+@import url('http://fonts.cdnfonts.com/css/monument-extended');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Poppins:wght@300;400;500;600;700;800&family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#093028, #237A57);
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 8px 8px;
+    color: white;
+    border-radius: 60px;
+    transition: all 250ms;
+}
+
+header ul li a:hover
+{
+    background: white;
+    color: rgb(0, 100, 55);
+}
+
+#cadastro {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: white;
+    padding: 5px;
+}
+
+/* FIM HEADER */
+/* MAIN (INICIO)*/
+
+.banner {
+    height: 100vh;
+}
+
+.banner .container {
+    margin-left: 25rem;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+    width: 550px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 48px;
+    text-align: center;
+    background-color: rgba(0, 29, 16, 0.644);
+    font-family: 'Monument Extended', sans-serif;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 65px;
+    margin-top: 11rem;
+}
+
+.banner span {
+    font-weight: bold;
+    color: rgb(101, 219, 54);
+}
+
+a {
+    text-decoration: none;
+}
+
+#up{
+    font-family: 'Monument Extended', sans-serif;
+}
+
+#up1{
+    font-family: 'Monument Extended', sans-serif;
+}
+
+#none {
+    text-decoration: none;
+}
+
+/* FIM INICIO */
+/* COMEÇO HISTÓRIA */
+
+.containerH .tituloH {
+    text-align: center;
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 40px;
+    font-weight: 450;
+}
+
+.containerH {
+    background: linear-gradient(#164739, #093028);
+    height: 100vh;
+    width: 100vw;
+}
+
+.containerH .historias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.historias p{
+    padding: 2rem;
+    color: #093028;
+    font-size: 20px;  
+}
+
+.div_hist {
+    border-radius: 50px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.div_hist:hover {
+    box-shadow: none;
+}
+
+.div_hist1 {
+    border-radius: 50px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.div_hist1:hover {
+    box-shadow: none;
+}
+
+.div_hist2 {
+    border-radius: 50px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.div_hist2:hover {
+    box-shadow: none;
+}
+
+/* FIM HISTÓRIA*/
+/* COMEÇO TÍTULOS */
+
+#tit {
+    background: linear-gradient(#093028, #155339);
+}
+
+.tituloT {
+    height: 17rem;
+}
+
+.text {
+    margin-left: 11.5rem;
+    margin-bottom: 10rem;
+    color: white;
+    font-size: 40px;
+    font-weight: 450;
+    position: absolute;
+}
+
+.tituloT #imgMundial {
+    margin-left: 3rem;
+    height: 17rem;
+    width: 23rem;
+    border-radius: 5px;
+}
+
+.tituloT #imgMundial1 {
+    margin-left: 31rem;
+    height: 17rem;
+    width: 23rem;
+    border-radius: 5px;
+}
+
+.caixasT p{
+    padding: 2rem;
+    color: #093028;
+    font-size: 20px;  
+    font-weight: 800;
+}
+
+.caixasT {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixasT .caixa1 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT .caixa1 .textCaixa1 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.caixasT .caixa1 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa1:hover {
+    box-shadow: none;
+}
+
+.caixasT .caixa2 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT .caixa2 .textCaixa2 {
+    margin-left: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.caixasT .caixa2 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa2:hover {
+    box-shadow: none;
+}
+
+.caixasT .caixa3 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT .caixa3 .textCaixa3 {
+    margin-left: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.caixasT .caixa3 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa3:hover {
+    box-shadow: none;
+}
+
+/* CONTAINER T1 */
+
+.caixasT1 p{
+    padding: 2rem;
+    color: #093028;
+    font-size: 20px;  
+    font-weight: 800;
+}
+
+.caixasT1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixasT1 .caixa4 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT1 .caixa4 .textCaixa4 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -55px;
+}
+
+.caixasT1 .caixa4 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa4:hover {
+    box-shadow: none;
+}
+
+.caixasT1 .caixa5 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT1 .caixa5 .textCaixa5 {
+    margin-left: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -25px;
+}
+
+.caixasT1 .caixa5 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa5:hover {
+    box-shadow: none;
+}
+
+.caixasT1 .caixa6 img {
+    height: 150px;
+    width: 150px;
+    margin-top: 110px;
+}
+
+.caixasT1 .caixa6 .textCaixa6 {
+    margin-left: 3rem;
+    color: rgb(0, 0, 0);
+    font-size: 14.6px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -26px;
+    margin-left: -10px;
+}
+
+.caixasT1 .caixa6 {
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    height: 22rem;
+    width: 20rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
+    transition: all 250ms;
+}
+
+.caixa6:hover {
+    box-shadow: none;
+}
