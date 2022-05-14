@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Poppins:wght@300;400;500;600;700;800&family=Righteous&family=Sarala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+*::selection {
+    color: #6a9986;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(#093028, #237A57);
 }
 
@@ -28,6 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 300ms;
 }
 
 header .logo {
@@ -131,7 +136,7 @@ a {
 }
 
 .containerH {
-    background: linear-gradient(#164739, #093028);
+    background: linear-gradient(#247c54, #093028);
     height: 100vh;
     width: 100vw;
 }
@@ -422,4 +427,103 @@ a {
 
 .caixa6:hover {
     box-shadow: none;
+}
+
+/* FIM TÍTULOS */
+/* COMEÇO CONTATO */
+
+.containerC {
+    padding-left: 1.5rem;
+    background: linear-gradient(#155339, #093028);
+}
+
+.containerC .text {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+#subtitulo {
+    padding-top: 7em;
+    color:#dcffe5;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #ffffff;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #dcffe5;
+}
+
+.botao {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    position: absolute;
+    border: 0;
+    color: white;
+    background: linear-gradient(to top right, rgb(4, 48, 0), rgb(7, 78, 0));
+    border-radius: 15px;
+    left: 35%;
+    margin-top: -6.5rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0px 0px 32px -7px #ffffff;
+}
+
+@keyframes botao {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+#check {
+    display: inline-block;
+}
+
+.check label {
+    color: #dcffe5;
+}
+
+fieldset.grupo strong{
+    color: white;
 }
