@@ -74,6 +74,8 @@ header ul li a:hover
     border-radius: 20px;
     border-color: white;
     padding: 5px;
+    margin-left: -6.8px;
+    margin-right: -6.8px;
 }
 
 /* FIM HEADER */
