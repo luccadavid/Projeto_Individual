@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palmeiras</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="entrar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entrar.css">
+    <link rel="stylesheet" href="css/header.css">
     <form action="https://formsubmit.co/lucca.david07@gmail.com" method="POST">
         <link rel="shortcut icon"
             href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png">
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <section class="inicio" id="inicio">
+    <section class="header" id="header">
         <header id="header1">
             <a href="#" class="logo">SE Palmeiras</a>
             <ul>
@@ -28,3 +29,24 @@
                 <li><a href="cadastro.html"><span id="cadastro">Cadastrar-se</span></a></li>
             </ul>
         </header>
+    </section>
+
+
+    <div class="containerLogin">
+        <div class="login">
+            <div class="inputs">
+                <h2>Faça seu login</h2>
+                <div class="texto">
+                    <b>Email:</b><br>
+                    <input type="text" placeholder="Insira seu email" id="ipt_email"><br><br>
+                    <b>Senha:</b><br>
+                    <input type="password" placeholder="Insira sua senha" id="ipt_senha"><br>
+                </div>
+                <span class="esqSenha">Esqueceu sua senha? Clique <a href="">aqui!</a></span><br>
+                <button onclick="">Entrar</button>
+            </div>
+            <div class="imagem">
+                <img src="assets/Tablet login.gif">
+            </div>
+        </div>
+    </div>
