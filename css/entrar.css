@@ -37,7 +37,7 @@
     height: 400px;
     width: 400px;
     margin-left: 97%;
-    margin-top: -18rem;
+    margin-top: -17.5rem;
     position: relative;
 }
 
@@ -61,6 +61,7 @@ button {
     box-shadow: 5px 5px 5px 0 #06251f;
     transition: all 300ms;
     cursor: pointer;
+    background: white;
 }
 
 button:hover {
@@ -79,4 +80,8 @@ button:hover {
     text-transform: uppercase;
     font-weight: 800;
     color: green;
+}
+
+input:focus{
+    background: #f2fff5;
 }

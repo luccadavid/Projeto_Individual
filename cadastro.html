@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palmeiras</title>
+    <title>Palmeiras | Cadastro</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/entrar.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/header.css">
     <form action="https://formsubmit.co/lucca.david07@gmail.com" method="POST">
-        <link rel="shortcut icon"
-            href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png">
-        <script src="index.js"></script>
+    <link rel="shortcut icon" href="https://logodetimes.com/times/palmeiras/logo-palmeiras-512.png">
+    <script src="index.js"></script>
 </head>
 
 <body>
+    <!-- HEADER -->
     <section class="inicio" id="inicio">
         <header id="header1">
             <a href="#" class="logo">SE Palmeiras</a>
@@ -29,3 +29,27 @@
                 <li><a href="#" class="agora"><span id="cadastro">Cadastrar-se</span></a></li>
             </ul>
         </header>
+
+        <!-- INPUTS CADASTRO -->
+        <div class="containerCadastro">
+           <div class="cadastro">
+                   <div class="imagem">
+                       <img src="assets/Mobile signup.gif">
+                   </div>
+                   <div class="inputs">
+                    <h2>Realize seu cadastro</h2>
+                    <div class="texto">
+                        <b>Nome:</b><br>
+                        <input type="text" placeholder="Insira seu nome" id="ipt_nome"><br><br>
+                        <b>Email:</b><br>
+                        <input type="text" placeholder="Insira seu email" id="ipt_email"><br><br>
+                        <b>CPF:</b><br>
+                        <input type="text" placeholder="Insira seu cpf" id="ipt_cpf"><br><br>
+                        <b>Senha:</b><br>
+                        <input type="password" placeholder="Insira sua senha" id="ipt_senha"><br>
+                    </div>
+                    <button onclick="btnCadastrar()">Cadastrar</button>
+                </div>
+               </div>
+           </div>
+        </div>
