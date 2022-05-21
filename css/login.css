@@ -2,19 +2,23 @@
     background: rgba(184, 184, 184, 0.61);
 }
 
-.containerCadastro {
+.containerLogin {
     height: 100vh;
 }
 
-.cadastro {
+.login {
     height: 30rem;
     width: 60rem;
     margin-left: 13rem;
     margin-top: 7.5rem;
     border-radius: 2%;
-    background: white;
+    background: #f2f2f2;
     position: relative;
     box-shadow: 0 0 20px 0px black;
+}
+
+.inputs {
+    width: 50%;
 }
 
 .inputs h2 {
@@ -23,39 +27,33 @@
     text-align: center;
     text-transform: uppercase;
     color: #06251f;
-    margin-left: 52%;
-    margin-top: -28.5rem;
 }
 
-.inputs b {
-    text-align: center;
-    color: #06251f;
-    margin-left: 37rem;
+.imagem {
+    width: 50%;
 }
 
 .imagem img {
     height: 400px;
     width: 400px;
-    margin-left: 10%;
-    margin-top: 3rem;
+    margin-left: 97%;
+    margin-top: -17.5rem;
     position: relative;
 }
 
 .inputs .texto {
     padding-left: 2rem;
-    margin-top: -1rem;
 }
 
 input {
     width: 200px;
     padding-left: 4px;
-    margin-left: 37rem;
 }
 
 button {
     border: 0.5px solid #06251f;
     margin-top: 2rem;
-    margin-left: 42rem;
+    margin-left: 5rem;
     width: 100px;
     height: 35px;
     text-transform: uppercase;
@@ -63,6 +61,7 @@ button {
     box-shadow: 5px 5px 5px 0 #06251f;
     transition: all 300ms;
     cursor: pointer;
+    background: white;
 }
 
 button:hover {
@@ -71,18 +70,18 @@ button:hover {
     background: #06251f;
 }
 
-input:focus{
-    background: #f2fff5;
-}
-
-.cadastro span{
-    margin-left: 36.5rem;
+.esqSenha {
+    margin-left: 2rem;
     font-size: 13px;
     text-decoration: none;
 }
 
-.cadastro a {
+.esqSenha a {
     text-transform: uppercase;
     font-weight: 800;
     color: green;
+}
+
+input:focus{
+    background: #f2fff5;
 }
