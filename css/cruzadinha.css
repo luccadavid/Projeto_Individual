@@ -96,7 +96,6 @@ aside {
 
 aside .esquerda {
     margin-right: 75.15rem;
-    /* border-right: 0.28rem solid var(--color-sucess); */
 }
 
 aside .imagem-profile {
@@ -119,7 +118,6 @@ aside .sidebar {
     position: relative;
     width: 17rem;
     margin-bottom: -20rem;
-    /* border-right: 0.28rem solid var(--color-sucess); */
 }
 
 aside h3 {
@@ -144,7 +142,7 @@ aside .sidebar a span {
 
 aside .sidebar a:last-child {
     position: absolute;
-    bottom: 21rem;
+    bottom: 15rem;
     width: 100%;
 }
 
@@ -186,7 +184,7 @@ aside .sidebar a:hover span {
 }
 
 .containerMain h1 {
-    margin-top: 25rem;
+    margin-top: 24rem;
     margin-left: 2rem;
 }
 
