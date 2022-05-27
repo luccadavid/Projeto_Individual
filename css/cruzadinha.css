@@ -184,7 +184,7 @@ aside .sidebar a:hover span {
 }
 
 .containerMain h1 {
-    margin-top: 22rem;
+    margin-top: 25rem;
     margin-left: 2rem;
     position: absolute;
 }
@@ -205,7 +205,7 @@ aside .sidebar a:hover span {
     width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radius-1);
-    margin-top: 25.5rem;
+    margin-top: 28rem;
 }
 
 .header .theme-toggler span {
@@ -226,8 +226,8 @@ aside .sidebar a:hover span {
 /* CRUZADINHA */
 .div_caixas {
     display: flex;
-    margin-left: 21rem;
-    margin-top: 27.5rem;
+    margin-left: 28rem;
+    margin-top: 28.5rem;
     position: absolute;
 }
 
@@ -249,4 +249,10 @@ input:disabled {
     background-color: rgb(194, 194, 194);
     color: black;
     font-weight: 1000;
+}
+
+.dicas {
+    font-size: 20px;
+    margin-top: 32rem;
+    margin-left: 3rem;
 }

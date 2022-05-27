@@ -3,89 +3,85 @@ function verificar(Numero) {
     var interval = /[a-zA-Z]/;
 
     if (num == 1) {
-        var DUALCORE = (letra1P1.value + letra2P1.value + letra3P1.value + letra4P1.value + letra5P1.value + letra6P1.value + letra7P1.value + letra8P1.value).toUpperCase();
-        if (DUALCORE == 'DUALCORE') {
+        var GOMEZ = (letra1P1.value + letra2P1.value + letra3P1.value + letra4P1.value + letra5P1.value).toUpperCase();
+        if (GOMEZ == 'GOMEZ') {
             letra1P1.disabled = true;
             letra2P1.disabled = true;
             letra3P1.disabled = true;
             letra4P1.disabled = true;
             letra5P1.disabled = true;
-            letra6P1.disabled = true;
-            letra7P1.disabled = true;
-            letra8P1.disabled = true;
 
             // MUDANDO COR DA BOX \\
             letra1P1.style = "border: solid #237A57;"
             letra2P1.style = "border: solid #237A57;"
             letra3P1.style = "border: solid #237A57;"
             letra4P1.style = "border: solid #237A57;"
-            letra4P1.style = "border: solid #237A57;"
             letra5P1.style = "border: solid #237A57;"
-            letra6P1.style = "border: solid #237A57;"
-            letra7P1.style = "border: solid #237A57;"
-            letra8P1.style = "border: solid #237A57;"
-
         }
     }   
     // FIM PALAVRA 1 \\
 
     else if (num == 2) {
-        var CPU = (letra1P2.value + letra2P2.value + letra2P1.value).toUpperCase();
-        if (CPU == 'CPU') {
+        var MAYKE = (letra1P2.value + letra2P2.value + letra3P2.value + letra4P2.value + letra4P1.value).toUpperCase();
+        if (MAYKE == 'MAYKE') {
             letra1P2.disabled = true;
             letra2P2.disabled = true;
-            letra2P1.disabled = true;
+            letra3P2.disabled = true;
+            letra4P2.disabled = true;
+            letra4P1.disabled = true;
 
-            letra1P2.style = 'border: solid #4169E1;';
-            letra2P2.style = 'border: solid #4169E1;';
-            letra2P1.style = 'border: solid #4169E1;';
+            letra1P2.style = 'border: solid #237A57;';
+            letra2P2.style = 'border: solid #237A57;';
+            letra3P2.style = 'border: solid #237A57;';
+            letra4P2.style = 'border: solid #237A57;';
+            letra4P1.style = 'border: solid #237A57;';
 
         }
     }   
     // FIM PALAVRA 2 \\
 
     else if (num == 3) {
-        var REGISTRADORES = (letra1P3.value + letra2P3.value + letra3P3.value + letra4P3.value + letra5P3.value + letra6P3.value + letra7P3.value + letra8P3.value + letra9P3.value + letra10P3.value + letra11P3.value + letra12P3.value + letra13P3.value).toUpperCase();
-        if (REGISTRADORES == 'REGISTRADORES') {
+        var SCARPA = (letra1P3.value + letra2P3.value + letra3P3.value + letra4P3.value + letra5P3.value + letra6P3.value).toUpperCase();
+        if (SCARPA == 'SCARPA') {
             letra1P3.disabled = true;
             letra2P3.disabled = true;
             letra3P3.disabled = true;
             letra4P3.disabled = true;
             letra5P3.disabled = true;
             letra6P3.disabled = true;
-            letra7P3.disabled = true;
-            letra8P3.disabled = true;
-            letra9P3.disabled = true;
-            letra10P3.disabled = true;
-            letra11P3.disabled = true;
-            letra12P3.disabled = true;
-            letra13P3.disabled = true;
 
-            letra1P3.style = 'border: solid #4169E1;';
-            letra2P3.style = 'border: solid #4169E1;';
-            letra3P3.style = 'border: solid #4169E1;';
-            letra4P3.style = 'border: solid #4169E1;';
-            letra5P3.style = 'border: solid #4169E1;';
-            letra6P3.style = 'border: solid #4169E1;';
-            letra7P3.style = 'border: solid #4169E1;';
-            letra8P3.style = 'border: solid #4169E1;';
-            letra9P3.style = 'border: solid #4169E1;';
-            letra10P3.style = 'border: solid #4169E1;';
-            letra11P3.style = 'border: solid #4169E1;';
-            letra12P3.style = 'border: solid #4169E1;';
-            letra13P3.style = 'border: solid #4169E1;';
+            letra1P3.style = 'border: solid #237A57;';
+            letra2P3.style = 'border: solid #237A57;';
+            letra3P3.style = 'border: solid #237A57;';
+            letra4P3.style = 'border: solid #237A57;';
+            letra5P3.style = 'border: solid #237A57;';
+            letra6P3.style = 'border: solid #237A57;';
         }
     }   
     // FIM PALAVRA 3 \\
 
     else if (num == 4) {
-        var I5 = (letra1P4.value + letra2P4.value).toUpperCase();
-        if (I5 == 'I5') {
+        var ZE_RAFAEL = (letra5P1.value + letra1P4.value + letra2P4.value + letra3P4.value + letra4P4.value + letra5P4.value + letra3P3.value + letra6P4.value + letra7P4.value).toUpperCase();
+        if (ZE_RAFAEL == 'ZE_RAFAEL') {
+            letra5P1.disabled = true;
             letra1P4.disabled = true;
             letra2P4.disabled = true;
+            letra3P4.disabled = true;
+            letra4P4.disabled = true;
+            letra5P4.disabled = true;
+            letra3P3.disabled = true;
+            letra6P4.disabled = true;
+            letra7P4.disabled = true;
 
-            letra1P4.style = "border: solid #4169E1;";
-            letra2P4.style = "border: solid #4169E1;";
+            letra5P1.style = "border: solid #237A57;";
+            letra1P4.style = "border: solid #237A57;";
+            letra2P4.style = "border: solid #237A57;";
+            letra3P4.style = "border: solid #237A57;";
+            letra4P4.style = "border: solid #237A57;";
+            letra5P3.style = "border: solid #237A57;";
+            letra3P3.style = "border: solid #237A57;";
+            letra6P4.style = "border: solid #237A57;";
+            letra7P4.style = "border: solid #237A57;";
         }
 
     }   
@@ -93,24 +89,17 @@ function verificar(Numero) {
 
 
     else if (num == 5) {
-        var DATABUS = (letra1P5.value + letra2P5.value + letra3P5.value + letra4P5.value + letra5P5.value + letra6P5.value + letra7P5.value).toUpperCase();
-        if (DATABUS == 'DATABUS') {
+        var LUAN = (letra7P4.value + letra1P5.value + letra2P5.value + letra3P5.value).toUpperCase();
+        if (LUAN == 'LUAN') {
+            letra7P4.disabled = true;
             letra1P5.disabled = true;
             letra2P5.disabled = true;
             letra3P5.disabled = true;
-            letra4P5.disabled = true;
-            letra5P5.disabled = true;
-            letra6P5.disabled = true;
-            letra7P5.disabled = true;
 
-            letra1P5.style = 'border: solid #4169E1;';
-            letra2P5.style = 'border: solid #4169E1;';
-            letra3P5.style = 'border: solid #4169E1;';
-            letra4P5.style = 'border: solid #4169E1;';
-            letra5P5.style = 'border: solid #4169E1;';
-            letra6P5.style = 'border: solid #4169E1;';
-            letra7P5.style = 'border: solid #4169E1;';
-
+            letra7P4.style = "border: solid #237A57;";
+            letra1P5.style = "border: solid #237A57;";
+            letra2P5.style = "border: solid #237A57;";
+            letra3P5.style = "border: solid #237A57;";
         }
     }   
     // FIM PALAVRA 5 \\
