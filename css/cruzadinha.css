@@ -256,3 +256,7 @@ input:disabled {
     margin-top: 32rem;
     margin-left: 3rem;
 }
+
+.espaco {
+    background-color: rgb(223, 223, 223) !important;
+}
