@@ -445,37 +445,30 @@ function verificar(Numero) {
             }
         }
 
-        let l2_9 = document.getElementById('letra2P8')
+        let l2_9 = document.getElementById('letra1P9')
         if (l2_9 === document.activeElement) {
-            if (letra2P8.value.match(interval)) {
-                document.getElementById("letra3P8").focus()
+            if (letra1P9.value.match(interval)) {
+                document.getElementById("letra2P9").focus()
             }
         }
 
-        let l3_9 = document.getElementById('letra3P8')
+        let l3_9 = document.getElementById('letra2P9')
         if (l3_9 === document.activeElement) {
-            if (letra3P8.value.match(interval)) {
-                document.getElementById("letra4P6").focus()
+            if (letra2P9.value.match(interval)) {
+                document.getElementById("letra3P9").focus()
             }
         }
-        let l4_9 = document.getElementById('letra1P8')
+        let l4_9 = document.getElementById('letra3P9')
         if (l4_9 === document.activeElement) {
-            if (letra1P8.value.match(interval)) {
-                document.getElementById("letra2P8").focus()
+            if (letra3P9.value.match(interval)) {
+                document.getElementById("letra4P9").focus()
             }
         }
 
-        let l5_9 = document.getElementById('letra2P8')
+        let l5_9 = document.getElementById('letra4P9')
         if (l5_9 === document.activeElement) {
-            if (letra2P8.value.match(interval)) {
-                document.getElementById("letra3P8").focus()
-            }
-        }
-
-        let l6_9 = document.getElementById('letra3P8')
-        if (l6_9 === document.activeElement) {
-            if (letra3P8.value.match(interval)) {
-                document.getElementById("letra4P6").focus()
+            if (letra4P9.value.match(interval)) {
+                document.getElementById("letra5P9").focus()
             }
         }
     }

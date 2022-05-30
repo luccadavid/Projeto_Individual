@@ -27,6 +27,14 @@ body {
     height: 100px;
 }
 
+.logo {
+    transition: all 300ms;
+}
+
+.logo:hover {
+    color: green;
+}
+
 .banner {
     height: 70vh;
 }
