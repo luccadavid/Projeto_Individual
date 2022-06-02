@@ -7,7 +7,7 @@
 }
 
 .cadastro {
-    height: 30rem;
+    height: 32.5rem;
     width: 60rem;
     margin-left: 13rem;
     margin-top: 7.5rem;
@@ -19,7 +19,7 @@
 
 .inputs h2 {
     font-size: 28px;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     text-transform: uppercase;
     color: #06251f;
@@ -43,7 +43,16 @@
 
 .inputs .texto {
     padding-left: 2rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
+}
+
+.sel_jogadores {
+    margin-left: 40rem;
+    border: 2px solid black;
+}
+
+select:focus {
+    background: #f2fff5;
 }
 
 input {
@@ -54,10 +63,10 @@ input {
 
 button {
     border: 0.5px solid #06251f;
-    margin-top: 2rem;
-    margin-left: 42rem;
-    width: 100px;
-    height: 35px;
+    margin-top: 1rem;
+    margin-left: 41rem;
+    width: 130px;
+    height: 37px;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 5px 5px 5px 0 #06251f;
@@ -79,10 +88,15 @@ input:focus{
     margin-left: 36.5rem;
     font-size: 13px;
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 .cadastro a {
     text-transform: uppercase;
     font-weight: 800;
     color: green;
+}
+
+.cadastrado {
+    padding-top: 1rem;
 }

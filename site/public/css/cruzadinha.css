@@ -173,7 +173,7 @@ aside .sidebar a:hover span {
 
 /* COMEÇO MAIN */
 .containerMain {
-    height: 80.4rem;
+    height: 95rem;
     margin-top: -70.1rem;
     width: 85%;
     margin-left: 17rem;
@@ -280,29 +280,25 @@ input:disabled {
 }
 
 .jogador1 img, .jogador2 img, .jogador3 img, .jogador4 img, .jogador5 img {
-    height: 450px;
+    height: 300px;
     width: 202px;
-    filter: grayscale(100%);
     transition: all 300ms;
     border-radius: var(--border-radius-1);
-    border: 1px solid var(--color-dark);
+    box-shadow: 2px 2px 10px 0px var(--color-dark);;
 }
 
 .jogador1 img:hover, .jogador2 img:hover, .jogador3 img:hover, .jogador4 img:hover, .jogador5 img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-    border: none;
+    box-shadow: none;
 }
 
 .botaoVoto {
-    margin-top: -4rem;
+    margin-top: 56rem;
     height: 50px;
     width: 130px;
     border-radius: var(--border-radius-1);
     background: var(--color-primary);
     color: white;
-    margin-left: 20rem;
-    position: absolute;
+    margin-left: 2rem;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -316,4 +312,11 @@ input:disabled {
 .botaoVoto:hover {
     box-shadow: none;
     background: var(--color-sucess);
+}
+
+.graph {
+    margin-top: 65rem;
+    margin-right: 12rem;
+    width: 900px;
+    height: 900px;
 }

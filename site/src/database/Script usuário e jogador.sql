@@ -14,14 +14,12 @@ foreign key (fkJogador) references jogador (idJogador)
 
 create table jogador (
 idJogador int primary key,
-nome varchar(45),
-posicao varchar(45),
-votos int
+nome varchar(45)
 );
 
 insert into jogador values
-	(10, 'Rony Rústico', 'Atacante', null),
-	(23, 'Raphael Veiga', 'Meia', null),
-	(21, 'Weverton', 'Goleiro', null),
-	(7, 'Dudu', 'Atacante', null),
-	(15, 'Gustavo Gómez', 'Zagueiro', null);
+	(10, 'Rony Rústico'),
+	(23, 'Raphael Veiga'),
+	(21, 'Weverton'),
+	(7, 'Dudu'),
+	(15, 'Gustavo Gómez');

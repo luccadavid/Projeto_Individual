@@ -66,6 +66,7 @@ function btnCadastrar(req, res) {
     var email = req.body.emailServer;
     var cpf = req.body.cpfServer;
     var senha = req.body.senhaServer;
+    var jogador = req.body.jogadorServer;
 
     // Faça as validações dos valores
     if (nome == undefined) {
@@ -76,10 +77,12 @@ function btnCadastrar(req, res) {
         res.status(400).send("Seu cpf está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
+    } else if (jogador == undefined) {
+        res.status(400).send("O jogador está undefined!");
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.btnCadastrar(nome, email, cpf, senha)
+        usuarioModel.btnCadastrar(nome, email, cpf, senha, jogador)
             .then(
                 function (resultado) {
                     res.json(resultado);

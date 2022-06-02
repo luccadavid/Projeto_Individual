@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- JS -->
     <script src="https://kit.fontawesome.com/4ea0191552.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         </div>
         <div class="sidebar">
             <a href="votos.html">
-                <span class="material-symbols-outlined">grid_view</span>
+                <span class="material-symbols-outlined">how_to_reg</span>
                 <h3>Votação</h3>
             </a>
             <a href="cruzadinha.html">
@@ -61,10 +62,10 @@
                 </div>
             </div>
         </div>
-        <span class="vote">Vote aqui no seu jogador preferido</span>
+        <span class="vote">Veja aqui os jogadores mais votados</span>
         <div class="containerJogadores">
             <div class="jogador1"><img
-                    src="https://conteudo.imguol.com.br/c/galeria/9e/2021/01/04/futebol-muleke---amp-teo-jose-1609792939391_v2_450x800.jpg">
+                    src="https://conteudo.imguol.com.br/c/esporte/96/2021/04/27/rony-comemora-o-gol-do-palmeiras-contra-o-independiente-del-valle-1619572630051_v2_450x600.jpg">
             </div>
             <div class="jogador2"><img src="https://live.staticflickr.com/65535/50291796966_84f373399e_b.jpg"></div>
             <div class="jogador3"><img
@@ -72,18 +73,87 @@
             <div class="jogador4"><img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/DuduPalmeiras2018.jpg/640px-DuduPalmeiras2018.jpg">
             </div>
-            <div class="jogador5"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Gustavo123.jpg"></div>
+            <div class="jogador5"><img src="https://img.r7.com/images/gomez-completa-15-jogos-seguidos-pelo-palmeiras-15052022005750264?dimensions=299x417&&&&&&resize=299x417&crop=1074x1499+64+0"></div>
         </div>
+    
+    <div class="graph">
+        <canvas id="canvas_grafico"></canvas>
     </div>
-    <button class="botaoVoto" onclick="votar()">Votar</button>
+</div>
+    
 
 </body>
 
 </html>
 
 <script src="../js/tema.js"></script>
+
 <script>
     var nome = sessionStorage.NOME_USUARIO;
 
     b_usuario.innerHTML = nome;
+</script>
+
+<script>
+    window.onload = obterDadosGrafico(1);
+     function obterDadosGrafico(idAquario) {
+
+        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    resposta.reverse();
+
+                    plotarGrafico(resposta, idAquario);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function plotarGrafico(resposta, idAquario) {
+        console.log('iniciando plotagem do gráfico...');
+
+        var dados = {
+            labels: [],
+            datasets: [
+                {
+                    label: 'Quantidade de votos',
+                    borderColor: '#093028',
+                    backgroundColor: '#237A57',
+                    fill: true,
+                    data: []
+                }
+            ]
+        };
+
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            dados.labels.push(registro.momento);
+            dados.datasets[0].data.push(registro.umidade);
+        }
+
+        console.log(JSON.stringify(dados));
+
+        var ctx = canvas_grafico.getContext('2d');
+        window.grafico_linha = new Chart(ctx, {
+            type: "bar",
+            data: dados,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }
+                    ],
+                }
+            }
+        });
+    }
+
 </script>

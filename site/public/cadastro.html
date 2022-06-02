@@ -45,7 +45,15 @@
                         <b>CPF:</b><br>
                         <input type="text" placeholder="Insira seu cpf" id="ipt_cpf"><br><br>
                         <b>Senha:</b><br>
-                        <input type="password" placeholder="Insira sua senha" id="ipt_senha"><br>
+                        <input type="password" placeholder="Insira sua senha" id="ipt_senha"><br><br>
+                        <b>Escolha o jogador preferido:</b><br>
+                        <select class="sel_jogadores" id="sel_jogadores">
+                            <option value="1">Rony Rústico</option>
+                            <option value="2">Raphael Veiga</option>
+                            <option value="3">Weverton</option>
+                            <option value="4">Dudu</option>
+                            <option value="5">Gustavo Gómez</option>
+                        </select>
                     </div>
                     <span class="cadastrado">Já é cadastrado? Então faça o login <a
                             href="login.html">aqui!</a></span><br>
@@ -66,8 +74,9 @@
         var emailVar = ipt_email.value;
         var cpfVar = ipt_cpf.value;
         var senhaVar = ipt_senha.value;
+        var jogadorVar = Number(sel_jogadores.value);
 
-        if (nomeVar == "" || emailVar == "" || cpfVar == "" || senhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || cpfVar == "" || senhaVar == "" || jogadorVar == "") {
             alert ("Mensagem de erro para todos os campos em branco");
 
             finalizarAguardar();
@@ -86,7 +95,8 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 cpfServer: cpfVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+                jogadorServer: jogadorVar
             })
         }).then(function (resposta) {
 
