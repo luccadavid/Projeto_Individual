@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmeiras | Login</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="shortcut icon" href="https://a.espncdn.com/i/teamlogos/soccer/500/2029.png">
+        <!-- JS -->
+        <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section class="header" id="header">
+        <header id="header1">
+            <a href="index.html" class="logo">SE Palmeiras</a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#hist">História</a></li>
+                <li><a href="index.html#tit">Títulos</a></li>
+                <li><a href="index.html#cont">Contato</a></li>
+                <li style="color: white; cursor:default;">|</li>
+                <li><a href="#" class="agora">Entrar</a></li>
+                <li><a href="cadastro.html"><span id="cadastro">Cadastrar-se</span></a></li>
+            </ul>
+        </header>
+    </section>
+
+    <!-- INPUTS LOGIN -->
+    <div class="containerLogin">
+        <div class="login">
+            <div class="inputs">
+                <h2>Faça seu login</h2>
+                <div class="texto">
+                    <b>Email:</b><br>
+                    <input type="text" placeholder="Insira seu email" id="ipt_email"><br><br>
+                    <b>Senha:</b><br>
+                    <input type="password" placeholder="Insira sua senha" id="ipt_senha"><br>
+                </div>
+                <span class="esqSenha">Esqueceu sua senha? Clique <a href="">aqui!</a></span><br>
+                <button onclick="btnEntrar()">Entrar</button>
+            </div>
+            <div class="imagem">
+                <img src="assets/Tablet login.gif">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+    function btnEntrar() {
+        // aguardar();
+
+        var emailVar = ipt_email.value;
+        var senhaVar = ipt_senha.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            alert ("Mensagem de erro para todos os campos em branco");
+            finalizarAguardar();
+            return false;
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/votos.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                alert("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+</script>
